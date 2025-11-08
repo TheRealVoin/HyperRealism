@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.therealvoin.hyperrealism.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.hyperrealism.refmap.json",
+  "client": [
+    "CuriosIntegrationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
