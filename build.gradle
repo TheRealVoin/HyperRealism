@@ -98,7 +98,6 @@ tasks.named('processResources', ProcessResources).configure {
             mod_name: mod_name,
             mod_logo: mod_logo,
             mod_link: mod_link,
-            mod_issue_tracker_link: mod_issue_tracker_link,
             mod_license: mod_license,
             mod_version: mod_version,
             mod_authors: mod_authors,
