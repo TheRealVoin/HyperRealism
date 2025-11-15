@@ -88,6 +88,16 @@ public class CreativeModeTabs {
             GUARD_VILLAGERS_TAB = null;
         }
 
+        if (ModDetectionHandler.isPassableFoliageLoaded()) {
+            PASSABLE_FOLIAGE_TAB = CREATIVE_MODE_TAB_DEFERRED_REGISTER.register("passable_foliage_tab",
+                    () -> CreativeModeTab.builder()
+                            .icon(() -> new ItemStack(Items.OAK_LEAVES))
+                            .title(Component.translatable("creativemodetab.hyperrealism.passable_foliage_tab"))
+                            .build());
+        } else {
+            PASSABLE_FOLIAGE_TAB = null;
+        }
+
         if(ModDetectionHandler.isRealisticTorchesLoaded()) {
             REALISTIC_TORCHES_TAB = CREATIVE_MODE_TAB_DEFERRED_REGISTER.register("realistictorches_tab",
                     () -> CreativeModeTab.builder()
