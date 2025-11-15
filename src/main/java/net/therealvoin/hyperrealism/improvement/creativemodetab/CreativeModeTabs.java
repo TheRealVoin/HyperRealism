@@ -23,6 +23,7 @@ public class CreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> BURNT_BASIC_TAB;
     public static final RegistryObject<CreativeModeTab> DUNGEONS_PLUS_TAB;
     public static final RegistryObject<CreativeModeTab> GUARD_VILLAGERS_TAB;
+    public static final RegistryObject<CreativeModeTab> PASSABLE_FOLIAGE_TAB;
     public static final RegistryObject<CreativeModeTab> REALISTIC_TORCHES_TAB;
     public static final RegistryObject<CreativeModeTab> SANITYDIM_TAB;
 
