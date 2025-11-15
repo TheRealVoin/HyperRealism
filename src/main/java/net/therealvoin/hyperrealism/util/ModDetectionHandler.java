@@ -3,6 +3,10 @@ package net.therealvoin.hyperrealism.util;
 import net.minecraftforge.fml.ModList;
 
 public class ModDetectionHandler {
+    public static boolean isAlexsMobsLoaded() {
+        return ModList.get().isLoaded("alexsmobs");
+    }
+
     public static boolean isBuildYourCampfireLoaded() {
         return ModList.get().isLoaded("better_campfires");
     }
