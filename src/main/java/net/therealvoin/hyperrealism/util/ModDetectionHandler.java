@@ -39,6 +39,10 @@ public class ModDetectionHandler {
         return ModList.get().isLoaded("sanitydim");
     }
 
+    public static boolean isToughAsNailsLoaded() {
+        return ModList.get().isLoaded("toughasnails");
+    }
+
     public static boolean isWeather2Loaded() {
         return ModList.get().isLoaded("weather2");
     }
