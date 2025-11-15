@@ -107,6 +107,7 @@ tasks.named('processResources', ProcessResources).configure {
             mod_authors: mod_authors,
             mod_description: mod_description,
 
+            alexs_mobs_version_range: alexs_mobs_version_range,
             build_your_campfire_version_range: build_your_campfire_version_range,
             burnt_basic_version_range: burnt_basic_version_range,
             diet_version_range: diet_version_range,
