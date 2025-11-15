@@ -84,6 +84,10 @@ dependencies {
     implementation fg.deobf("curse.maven:dungeons-plus-377794:5026070")
     implementation fg.deobf("curse.maven:structure-gel-api-378802:5278429")
     implementation fg.deobf("curse.maven:guard-villagers-360203:6793945")
+    implementation fg.deobf("curse.maven:alexs-mobs-426558:5698791")
+    implementation fg.deobf("curse.maven:tough-as-nails-246391:5815863")
+    implementation fg.deobf("curse.maven:deeperdarker-659011:5906086")
+    implementation fg.deobf("curse.maven:passable-foliage-379887:4869702")
     implementation fg.deobf(fileTree(dir: 'libs', include: ['*.jar']))
 }
 
