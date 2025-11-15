@@ -15,6 +15,10 @@ public class ModDetectionHandler {
         return ModList.get().isLoaded("burnt");
     }
 
+    public static boolean isDeeperAndDarkerLoaded() {
+        return ModList.get().isLoaded("deeperdarker");
+    }
+
     public static boolean isDungeonsPlusLoaded() {
         return ModList.get().isLoaded("dungeons_plus");
     }
