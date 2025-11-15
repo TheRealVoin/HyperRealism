@@ -117,6 +117,7 @@ tasks.named('processResources', ProcessResources).configure {
             passable_foliage_version_range: passable_foliage_version_range,
             realistic_torches_version_range: realistic_torches_version_range,
             sanity_dim_version_range: sanity_dim_version_range,
+            tough_as_nails_version_range: tough_as_nails_version_range,
             weather2_version_range: weather2_version_range,
     ]
     inputs.properties replaceProperties
