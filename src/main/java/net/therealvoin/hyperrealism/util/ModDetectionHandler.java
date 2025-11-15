@@ -27,6 +27,10 @@ public class ModDetectionHandler {
         return ModList.get().isLoaded("guardvillagers");
     }
 
+    public static boolean isPassableFoliageLoaded() {
+        return ModList.get().isLoaded("passablefoliage");
+    }
+
     public static boolean isRealisticTorchesLoaded() {
         return ModList.get().isLoaded("realistictorches");
     }
