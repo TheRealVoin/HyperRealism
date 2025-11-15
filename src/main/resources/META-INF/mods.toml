@@ -26,6 +26,13 @@ description = '''${mod_description}'''
     side = "BOTH"
 
 [[dependencies.${mod_id}]]
+    modId = "alexsmobs"
+    mandatory = false
+    versionRange = "${alexs_mobs_version_range}"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.${mod_id}]]
     modId = "better_campfires"
     mandatory = false
     versionRange = "${build_your_campfire_version_range}"
