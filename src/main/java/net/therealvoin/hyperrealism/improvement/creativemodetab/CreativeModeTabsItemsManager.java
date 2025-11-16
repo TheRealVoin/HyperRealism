@@ -31,6 +31,7 @@ import net.therealvoin.hyperrealism.main.HyperRealism;
 import snownee.passablefoliage.PassableFoliage;
 import tallestegg.guardvillagers.GuardItems;
 import toughasnails.api.enchantment.TANEnchantments;
+import toughasnails.api.potion.TANPotions;
 import toughasnails.core.ToughAsNails;
 import weather2.WeatherItems;
 
@@ -290,14 +291,14 @@ public class CreativeModeTabsItemsManager {
             } else if (currentTab == CreativeModeTabs.INGREDIENTS) {
                 removeModdedEnchantmentBooks(event, ToughAsNails.MOD_ID);
             } else if (currentTab == tab) {
-                addModdedArrowsAndPotions(event, tab, Items.TIPPED_ARROW, "toughasnails:ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.TIPPED_ARROW, "toughasnails:long_ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.POTION, "toughasnails:ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.POTION, "toughasnails:long_ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.SPLASH_POTION, "toughasnails:ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.SPLASH_POTION, "toughasnails:long_ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.LINGERING_POTION, "toughasnails:ice_resistance");
-                addModdedArrowsAndPotions(event, tab, Items.LINGERING_POTION, "toughasnails:long_ice_resistance");
+                addToughAsNailsArrow(event, tab, TANPotions.ICE_RESISTANCE);
+                addToughAsNailsArrow(event, tab, TANPotions.LONG_ICE_RESISTANCE);
+                addToughAsNailsPotion(event, tab, TANPotions.ICE_RESISTANCE);
+                addToughAsNailsPotion(event, tab, TANPotions.LONG_ICE_RESISTANCE);
+                addToughAsNailsSplashPotion(event, tab, TANPotions.ICE_RESISTANCE);
+                addToughAsNailsSplashPotion(event, tab, TANPotions.LONG_ICE_RESISTANCE);
+                addToughAsNailsLingeringPotion(event, tab, TANPotions.ICE_RESISTANCE);
+                addToughAsNailsLingeringPotion(event, tab, TANPotions.LONG_ICE_RESISTANCE);
 
                 addToughAsNailsEnchantmentBook(event, tab, TANEnchantments.THERMAL_TUNING, 1);
                 addToughAsNailsEnchantmentBook(event, tab, TANEnchantments.WATER_CLEANSING, 1);
@@ -334,11 +335,29 @@ public class CreativeModeTabsItemsManager {
         addItemToTab(event, tab, potionEffect, Items.LINGERING_POTION);
     }
 
-    private static void addModdedArrowsAndPotions(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Item item, String potionEffect) {
+    private static void addToughAsNailsArrow(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Potion potionEffect) {
+        addToughAsNailsXPotion(event, tabKey, Items.TIPPED_ARROW, potionEffect);
+    }
+
+    private static void addToughAsNailsPotion(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Potion potionEffect) {
+        addToughAsNailsXPotion(event, tabKey, Items.POTION, potionEffect);
+    }
+
+    private static void addToughAsNailsSplashPotion(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Potion potionEffect) {
+        addToughAsNailsXPotion(event, tabKey, Items.SPLASH_POTION, potionEffect);
+    }
+
+    private static void addToughAsNailsLingeringPotion(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Potion potionEffect) {
+        addToughAsNailsXPotion(event, tabKey, Items.LINGERING_POTION, potionEffect);
+    }
+
+    private static void addToughAsNailsXPotion(BuildCreativeModeTabContentsEvent event, ResourceKey<CreativeModeTab> tabKey, Item item, Potion potionEffect) {
         if (event.getTabKey() == tabKey) {
             ItemStack itemStack = new ItemStack(item);
             CompoundTag tag = new CompoundTag();
-            tag.putString("Potion", potionEffect);
+
+            ResourceLocation potionId = ForgeRegistries.POTIONS.getKey(potionEffect);
+            tag.putString("Potion", potionId.toString());
             itemStack.setTag(tag);
             event.accept(itemStack);
         }
