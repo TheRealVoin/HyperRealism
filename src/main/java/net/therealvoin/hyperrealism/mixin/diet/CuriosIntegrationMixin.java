@@ -1,4 +1,4 @@
-package net.therealvoin.hyperrealism.mixin;
+package net.therealvoin.hyperrealism.mixin.diet;
 
 import net.minecraft.client.gui.screens.Screen;
 import org.spongepowered.asm.mixin.Mixin;
