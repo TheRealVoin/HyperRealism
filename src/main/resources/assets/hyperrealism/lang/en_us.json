@@ -4,6 +4,15 @@
   "creativemodetab.hyperrealism.dungeons_plus_tab": "Dungeons Plus",
   "creativemodetab.hyperrealism.guard_villagers_tab": "Guard Villagers",
   "creativemodetab.hyperrealism.passable_foliage_tab": "Passable Foliage",
-  "creativemodetab.hyperrealism.realistic_torches_tab": "Realistic Torches",
-  "creativemodetab.hyperrealism.sanitydim_tab": "Sanity: Descent Into Madness"
+  "creativemodetab.hyperrealism.sanitydim_tab": "Sanity: Descent Into Madness",
+
+  "block.hyperrealism.unbound_barley_hay_block": "Unbound Barley Hay Bale",
+  "block.hyperrealism.unbound_oat_hay_block": "Unbound Oat Hay Bale",
+  "block.hyperrealism.unbound_rice_hay_block": "Unbound Rice Hay Bale",
+  "block.hyperrealism.unbound_rye_hay_block": "Unbound Rye Hay Bale",
+
+  "text.hyperrealism.cloth_config.search": "Search...",
+  "text.hyperrealism.eanimod.inventory": "Inventory",
+  "text.hyperrealism.sound_physics_remastered.plugin_name": "Own voice",
+  "text.hyperrealism.sound_physics_remastered.plugin_description": "The volume of your own voice"
 }
