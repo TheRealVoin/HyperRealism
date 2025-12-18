@@ -72,22 +72,23 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    implementation fg.deobf("curse.maven:curios-309927:6418456")
-    implementation fg.deobf("curse.maven:diet-443570:4813904")
-    implementation fg.deobf("curse.maven:sanity-descent-into-madness-876448:4625236")
-    implementation fg.deobf("curse.maven:geckolib-388172:7025129")
-    implementation fg.deobf("curse.maven:jei-238222:7037120")
-    implementation fg.deobf("curse.maven:realistic-torches-235729:4647752")
-    implementation fg.deobf("curse.maven:build-your-campfire-996598:6719202")
-    implementation fg.deobf("curse.maven:weather-storms-tornadoes-237746:5244118")
-    implementation fg.deobf("curse.maven:coroutil-237749:5096038")
-    implementation fg.deobf("curse.maven:dungeons-plus-377794:5026070")
-    implementation fg.deobf("curse.maven:structure-gel-api-378802:5278429")
-    implementation fg.deobf("curse.maven:guard-villagers-360203:6793945")
     implementation fg.deobf("curse.maven:alexs-mobs-426558:5698791")
-    implementation fg.deobf("curse.maven:tough-as-nails-246391:5815863")
+    implementation fg.deobf("curse.maven:build-your-campfire-996598:6719202")
+    implementation fg.deobf("curse.maven:cloth-config-348521:5729105")
+    implementation fg.deobf("curse.maven:curios-309927:6418456")
     implementation fg.deobf("curse.maven:deeperdarker-659011:5906086")
+    implementation fg.deobf("curse.maven:diet-443570:4813904")
+    implementation fg.deobf("curse.maven:dungeons-plus-377794:5026070")
+    implementation fg.deobf("curse.maven:genetic-animals-313213:6134040")
+    implementation fg.deobf("curse.maven:guard-villagers-360203:6793945")
     implementation fg.deobf("curse.maven:passable-foliage-379887:4869702")
+    implementation fg.deobf("curse.maven:sanity-descent-into-madness-876448:4625236")
+    implementation fg.deobf("curse.maven:simple-farming-327554:4711850")
+    implementation fg.deobf("curse.maven:simple-voice-chat-416089:7117009")
+    implementation fg.deobf("curse.maven:sound-physics-remastered-535489:6352920")
+    implementation fg.deobf("curse.maven:structure-gel-api-378802:5278429")
+    implementation fg.deobf("curse.maven:tough-as-nails-246391:5815863")
+    implementation fg.deobf("curse.maven:weather-storms-tornadoes-237746:5244118")
     implementation fg.deobf(fileTree(dir: 'libs', include: ['*.jar']))
 }
 
@@ -110,13 +111,18 @@ tasks.named('processResources', ProcessResources).configure {
             alexs_mobs_version_range: alexs_mobs_version_range,
             build_your_campfire_version_range: build_your_campfire_version_range,
             burnt_basic_version_range: burnt_basic_version_range,
+            cloth_config_version_range: cloth_config_version_range,
+            curios_version_range: curios_version_range,
             deeper_and_darker_version_range: deeper_and_darker_version_range,
             diet_version_range: diet_version_range,
             dungeons_plus_version_range: dungeons_plus_version_range,
+            genetic_animals_version_range: genetic_animals_version_range,
             guard_villagers_version_range: guard_villagers_version_range,
             passable_foliage_version_range: passable_foliage_version_range,
-            realistic_torches_version_range: realistic_torches_version_range,
             sanity_dim_version_range: sanity_dim_version_range,
+            simple_farming_version_range: simple_farming_version_range,
+            simple_voice_chat_version_range: simple_voice_chat_version_range,
+            sound_physics_remastered_version_range: sound_physics_remastered_version_range,
             tough_as_nails_version_range: tough_as_nails_version_range,
             weather2_version_range: weather2_version_range,
     ]
