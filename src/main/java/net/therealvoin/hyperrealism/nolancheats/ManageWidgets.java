@@ -1,4 +1,4 @@
-package net.therealvoin.hyperrealism.improvement.nolancheats;
+package net.therealvoin.hyperrealism.nolancheats;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.AbstractButton;
@@ -19,7 +19,6 @@ public class ManageWidgets {
     @SubscribeEvent
     public static void onLanScreenInit(ScreenEvent.Init.Post event) {
         if (event.getScreen() instanceof ShareToLanScreen lanScreen) {
-            // If cheats are enabled, do nothing
             if (wasWorldCreatedWithCheatsOn()) {
                 return;
             }
@@ -32,7 +31,7 @@ public class ManageWidgets {
         }
     }
 
-    public static boolean wasWorldCreatedWithCheatsOn() {
+    private static boolean wasWorldCreatedWithCheatsOn() {
         LocalPlayer player = Minecraft.getInstance().player;
         return player != null && player.hasPermissions(REQUIRED_PERMISSION_LEVEL);
     }
