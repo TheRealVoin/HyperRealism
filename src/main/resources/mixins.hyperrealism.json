@@ -5,7 +5,15 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.hyperrealism.refmap.json",
   "client": [
-    "CuriosIntegrationMixin"
+    "cloth_config.SearchFieldEntryMixin",
+    "diet.CuriosIntegrationMixin",
+    "eanimod.EnhancedAnimalScreenMixin",
+    "sound_physics_remastered.SimpleVoiceChatPluginMixin"
+  ],
+  "mixins": [
+    "eanimod.EventSubscriberMixin",
+    "eanimod.GrazingGoalMixin",
+    "eanimod.GrazingMixin"
   ],
   "injectors": {
     "defaultRequire": 1
